@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primaryColor:#595dae;
+    --subColor:#000;
+}
+main{
+    display: flex;
+    justify-content: flex-end;
+}
+.search-area{
+    position: fixed;
+    width: 40%;
+    background-color: var(--primaryColor);
+    height: 100vh;
+    padding: 20px;
+    left: 0;
+}
+.result-area{
+    width: 60%;
+}
+.search-area div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.search-area .search-input{
+    width: 85%;
+    height: 40px;
+    border: 0;
+    margin-left: 20px;
+    padding: 10px;
+    color: var(--primaryColor);
+}
+#search-btn{
+    border: 0;
+    cursor: pointer;
+}
+#search-btn i{
+    width: 40px;
+    height: 40px;
+    border: 0;
+    line-height: 40px;
+    display: block;
+    color: white;
+    background-color: var(--subColor);
+}
+.search-header{
+    position: absolute;
+    top: 40%;
+    color: white;
+}
+.result-area{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+.card{
+    box-shadow: 0 4px 20px #ccc;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.result-area > div{
+    width: 49%;
+}
+
+.card .card-img img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.card-info h2{
+    margin: 20px 0;
+}
+.card-info a{
+    display: inline-block;
+    background-color: var(--primaryColor);
+    color: white;
+    text-decoration: none;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+.card-info a:hover{
+    background-color: var(--subColor);
+}
+.show-details{
+    display: none;
+}
+.Recipe-details{
+    position: fixed;
+    width: 40%;
+    background-color: var(--primaryColor);
+    height: 100vh;
+    padding: 20px;
+    left: 0;
+    padding: 80px 30px;
+}
+.Recipe-details i{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.Recipe-details >*{
+    margin-bottom: 25px;
+}
+.Recipe-details a{
+    text-decoration: none;
+    color: white;
+}
+.Recipe-details h2{
+    color: white;
+    font-size: 35px;
+}
+.Recipe-details p{
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+
